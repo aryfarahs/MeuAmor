@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --vermelho: #d72525;
+    --branco: #f7f9f9;
+    --cinza: #4c5154;
+    --preto: #121517;
+}
+
+.startHeart {
+    transition: transform 0.3s ease;
+    width: 15vw;
+    min-width: 100px;
+    display: flex;
+    margin: 180px auto;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+
