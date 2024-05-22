@@ -10,7 +10,31 @@
     --preto: #121517;
 }
 
+header {
+    min-height: 30px;
+    height: 3.5vw;
+    padding: 5px;
+    box-shadow: 1px 1px 10px 1px lightgray;
+    background-image: url("images/header.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+body {
+    min-height: 1000px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    min-height: 75vh;
+}
+
 .startHeart {
+    position: relative;
+    z-index: 1;
     transition: transform 0.3s ease;
     width: 15vw;
     min-width: 100px;
@@ -21,5 +45,37 @@
         transform: scale(1.2);
     }
 }
+
+.setaBaixo {
+    min-width: 50px;
+    min-height: 50px;
+    width: 5vw;
+    height: 5vw;
+    background-image: url("images/down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation-name: setaBaixo;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes setaBaixo {
+    0% {
+        top: -130px;
+    }
+    50% {
+        top: -115px;
+    }
+    100% {
+        top: -130px;
+    }
+}
+
 
 
