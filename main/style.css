@@ -11,6 +11,9 @@
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
     min-height: 30px;
     height: 3.5vw;
     padding: 5px;
@@ -20,12 +23,23 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+
 body {
-    min-height: 1000px;
+    min-height: 2000px;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px lightgray;
+    position: relative;
 }
 
 .container {
@@ -77,5 +91,10 @@ body::-webkit-scrollbar {
     }
 }
 
-
-
+.containerCarta {
+    width: 40vw;
+    margin: 60px auto;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px lightgray;
+}
