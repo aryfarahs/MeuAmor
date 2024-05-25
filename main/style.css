@@ -334,3 +334,32 @@ footer {
 .amoMais h3 {
     margin-top: 20px ;
 }
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 80px;
+    width: 40vw;
+    border: 1px solid blue;
+    justify-content: space-evenly;
+
+}
+
+#sim {
+    height: 50px;
+    width: 80px;
+    background-color: var(--vermelho);
+    border: white;
+    border-radius: 10px;
+    color: white
+}
+
+#nao {
+    height: 50px;
+    width: 80px;
+    background-color: var(--vermelho);
+    border: white;
+    border-radius: 10px;
+    color: white;
+}
