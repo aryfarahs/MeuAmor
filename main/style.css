@@ -321,6 +321,7 @@ footer {
     position: absolute;
     width: 38px;
     height: 38px;
+    margin-left: -1000px;
     cursor: pointer;
     top: calc(45% - 38px);
     right: 0px;
