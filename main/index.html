@@ -25,7 +25,7 @@
         -->
     </div>
     <header id="header">
-        <img src="images/header.png" alt="">
+        <img src="images/header.png" >
     </header>
     <main>
         <div class="containerCarta" id="cartinha">
@@ -103,25 +103,26 @@
             </div>
         </div>
 
-        <div class="amoMais">
+        <div class="amoMais" id="amoMais">
             <h1>Por último, mas não menos importante...</h1>
             <h3>Teremos que concordar, <span style="font-size: 26px; color: var(--vermelho);">EU AMO MAIS</span>!</h3>
+            <img src="images/momais.gif">
             <div class="botoes">
-                <button id="sim">Claro!</button>
-                <button id="nao">Nunca!</button>
+                <button id="sim" onclick="trocaDisplay()">Claro!</button>
+                <button id="nao" onmouseover="fuja()">Nunca!</button>
+            </div>
+            <div id="bomQueSabe">
+                <h2>BOM QUE SABE!</h2>
+                <img src="images/flowerDog.png">
             </div>
         </div>
-        
-
-        
-
-
+   
     </main>
-    <!--    
-    <footer>
-        cu
-    </footer>
-    -->
+
+    <!-- <footer id="footer">
+        <h4>Feito Pelo Amor da Sua Vida, Para o Amor da Minha Vida</h4>
+    </footer> -->
+    
     <script src="javascript.js"></script>
 </body>
 </html>
